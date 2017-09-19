@@ -1,0 +1,49 @@
+{
+  "databases": [
+      {
+          "id": "acmebase-2",
+          "name": "SureChEMBL Sample",
+          "description": "A database that contains everything.",
+          "directory": "surechembl",
+          "fingerprints": [
+              {
+                  "id": "xfp",
+                  "name": "Xfp",
+                  "description": "The Xfp fingerprint.",
+                  "directory": "Xfp",
+                  "infosFile": "surechembl.xfp.info",
+                  "infoIndicesFile": "surechembl.xfp.info.index",
+                  "variants": [
+                      {
+                          "id": "250",
+                          "name": "Low Resolution",
+                          "description": "Binned with a resolution of 250 x 250 x 250.",
+                          "resolution": 250,
+                          "dataTypes": [
+                              "uint16",
+                              "uint16",
+                              "uint16"
+                          ],
+                          "directory": "250",
+                          "indicesFile": "surechembl.xfp.250.dat",
+                          "coordinatesFile": "surechembl.xfp.250.xyz",
+                          "maps": [
+                              {
+                                  "id": "hac",
+                                  "name": "Heavy Atom Count",
+                                  "description": "The number of heavy (non-hydrogen) atoms in the molecule.",
+                                  "mapFile": "surechembl.xfp.250.1.map",
+                                  "dataTypes": [
+                                      "float32",
+                                      "float32",
+                                      "float32"
+                                  ]
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ]
+      }
+  ]
+}
